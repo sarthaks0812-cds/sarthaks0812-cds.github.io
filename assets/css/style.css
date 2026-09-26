@@ -135,10 +135,10 @@ img {
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 7vw, 5.5rem);
-    line-height: 1.05;
+    font-size: clamp(2.6rem, 5vw, 4.2rem);
+    line-height: 1.08;
 
-    letter-spacing: -0.045em;
+    letter-spacing: -0.035em;
 
     margin-bottom: 2rem;
 }
@@ -168,31 +168,32 @@ img {
 
     padding: 0.7rem 1.25rem;
 
-    border: 1px solid var(--text-primary);
+    background: transparent;
+    color: var(--text-primary);
+
+    border: 1px solid var(--border);
     border-radius: 5px;
 
     font-size: 0.95rem;
     font-weight: 500;
 
     transition:
-        background 0.2s ease,
-        color 0.2s ease;
+        border-color 0.2s ease,
+        color 0.2s ease,
+        background 0.2s ease;
 }
 
-.button-primary {
-    background: var(--text-primary);
-    color: white;
+.button-primary,
+.button-secondary {
+    background: transparent;
+    color: var(--text-primary);
 }
 
-.button-primary:hover {
-    background: var(--accent);
+.button:hover {
+    color: var(--accent);
     border-color: var(--accent);
+    background: #fafafa;
 }
-
-.button-secondary:hover {
-    background: #f5f5f5;
-}
-
 
 /* =========================================================
    General Sections
