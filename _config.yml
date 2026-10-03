@@ -2,7 +2,7 @@ title: Sarthak Sahoo
 email: sarths@umich.edu
 description: Robotics, system dynamics, controls, and experimental mechatronics.
 theme: minima
-url: "" # Set to https://YOUR-USERNAME.github.io
+url: "https://sarthaks0812-cds.github.io" # Set to https://YOUR-USERNAME.github.io
 baseurl: "" # Leave empty for YOUR-USERNAME.github.io; use /REPOSITORY for a project site
 markdown: kramdown
 plugins:
