@@ -1,0 +1,6 @@
+# PDF notes appear automatically in the My Notes section.
+# Add a PDF under notes/files/, then add an entry like:
+# - title: Linear systems and state-space models
+#   topic: Controls
+#   file: /notes/files/linear-systems.pdf
+[]
