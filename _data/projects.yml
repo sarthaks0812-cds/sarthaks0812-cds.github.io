@@ -1,20 +1,16 @@
 - slug: flexible-structures
   title: Modelling, fabrication and control of a single-DOF satellite testbench with flexible appendages
-  summary: Modelled coupled rigid-body motion and elastic deformation using Hamilton’s
-    principle. Developed an Euler–Bernoulli beam FEM model with Hermite elements and
-    predicted natural frequencies within ±0.1% error.
-  period: IIT Bombay · 2025–2026
-  tools: MATLAB · FEM · System identification
+  summary: The experimental setup consists of a Panasonic servo motor and driver, Laifual harmonic drive, an aluminum-extrusion satellite hub with an acrylic sheet adaptor, flexible appendages, and a laser displacement sensor. Position commands from an NI myRIO controller are sent to the servo driver, which actuates the rigid hub about the vertical axis through the harmonic drive, providing precise and rigid rotational motion. The laser displacement sensor simultaneously measures the deflection of the flexible appendage. The setup is designed to experimentally test and validate motion-planning algorithms for single-degree-of-freedom satellite maneuvers while accounting for the vibration of the flexible appendages.
+  period: IIT Bombay · Feb 2025 – Jul 2026
+  tools: LabVIEW FPGA | System Identification | Simscape Multibody | NI CompactRIO | MATLAB | FFT
   image: '/assets/images/satellite_project.png'
-  image_alt: Rigid–flexible system modelling
+  image_alt: Single-DOF Satellite
 - slug: cable-driven-robot
-  title: Cable-driven parallel robot
-  summary: Designed and fabricated an underactuated robot with closed-loop steppers
-    and Dyneema cables, achieving ±5 mm trajectory-tracking repeatability. Developed
-    custom winch drums and synchronized three actuators through LabVIEW FPGA.
-  period: IIT Bombay · 2024
-  tools: LabVIEW FPGA · SolidWorks · Arduino
-  image: ''
+  title: Modelling and fabrication of a cable driven parallel robot
+  summary: The experimental platform consists of an aluminum-frame cubic structure with an acrylic top plate, three closed-loop stepper motors, Dyneema cables, an NI myRIO controller, and a cylindrical end effector. Commands from the NI myRIO drive the three stepper motors, each of which rotates a spool mounted on its shaft to vary the length of the corresponding cable attached to the end effector. Coordinated changes in the three cable lengths control the position and motion of the end effector within the workspace. The setup is designed to experimentally test and validate stabilization and motion-planning algorithms developed for cable-driven robotic systems.
+  period: IIT Bombay | Jan 2024 - Jun 2024
+  tools: SolidWorks | Stepper motor control | NI myRIO | 3D printing | LabVIEW
+  image: '/assets/images/cdpr_publication.png'
   image_alt: Cable-driven parallel robot
 - slug: assistive-robot
   title: Dual-arm mobile social robot
