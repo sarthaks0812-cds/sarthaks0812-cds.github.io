@@ -1,0 +1,5 @@
+---
+layout: default
+---
+{% assign project = site.data.projects | where: "slug", page.project_slug | first %}
+<article class="project-page"><a href="{{ '/' | relative_url }}#projects">Back to Projects</a><p class="eyebrow">{{ project.period | escape }}</p><h1>{{ project.title | escape }}</h1>{% if project.image and project.image != '' %}<img class="project-hero-image" src="{{ project.image | relative_url }}" alt="{{ project.image_alt | escape }}">{% endif %}<p class="intro">{{ project.summary | escape }}</p><p class="stack">{{ project.tools | escape }}</p><div class="project-body">{{ content }}</div></article>
