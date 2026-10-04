@@ -1,0 +1,46 @@
+- slug: flexible-structures
+  title: Rigid–flexible system modelling
+  summary: Modelled coupled rigid-body motion and elastic deformation using Hamilton’s
+    principle. Developed an Euler–Bernoulli beam FEM model with Hermite elements and
+    predicted natural frequencies within ±0.1% error.
+  period: IIT Bombay · 2025–2026
+  tools: MATLAB · FEM · System identification
+  image: ''
+  image_alt: Rigid–flexible system modelling
+- slug: cable-driven-robot
+  title: Cable-driven parallel robot
+  summary: Designed and fabricated an underactuated robot with closed-loop steppers
+    and Dyneema cables, achieving ±5 mm trajectory-tracking repeatability. Developed
+    custom winch drums and synchronized three actuators through LabVIEW FPGA.
+  period: IIT Bombay · 2024
+  tools: LabVIEW FPGA · SolidWorks · Arduino
+  image: ''
+  image_alt: Cable-driven parallel robot
+- slug: assistive-robot
+  title: Dual-arm mobile social robot
+  summary: Prototyped a wheeled dual-arm robot for interaction with children with
+    autism spectrum disorder. Derived arm kinematics and Euler–Lagrange dynamics,
+    and validated the model in Simscape Multibody. The work contributed to an Indian
+    patent.
+  period: NIT Rourkela · 2023–2024
+  tools: MATLAB · Simscape Multibody · SolidWorks
+  image: ''
+  image_alt: Dual-arm mobile social robot
+- slug: underwater-vehicle
+  title: Autonomous underwater vehicle
+  summary: 'Led the mechanical subsystem: designed a modular frame and arranged eight
+    thrusters for six degrees of freedom. Reduced mass from 21 kg to 20.28 kg and
+    checked hull integrity under hydrostatic loading.'
+  period: Team Tiburon · 2021–2024
+  tools: Mechanical design · ANSYS · Fabrication
+  image: ''
+  image_alt: Autonomous underwater vehicle
+- slug: human-powered-vehicle
+  title: Electric human-powered vehicle
+  summary: Designed a semi-recumbent chassis and studied rider ergonomics. Reduced
+    rollover-structure deformation by 30% through geometry optimization and simulated
+    a landing-gear mechanism with deployment within 8 seconds.
+  period: Team BlueStreak · 2021–2023
+  tools: CATIA · ANSYS · Simscape Multibody
+  image: ''
+  image_alt: Electric human-powered vehicle
