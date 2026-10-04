@@ -1,13 +1,478 @@
 ---
 layout: default
 ---
-<section id="home" class="hero"><div class="hero-main"><p class="eyebrow">M.S. Robotics · University of Michigan</p><h1>Sarthak Sahoo<span>Dynamics. Controls. Robotics.</span></h1><p class="intro">I am a first-year M.S. Robotics student at the University of Michigan, with a background in mechanical engineering. My interests are in system dynamics and control, mechatronics, and motion planning.</p><p>I enjoy working across mathematical modelling, simulation, mechanical design, and experiments. Before Michigan, I worked at IIT Bombay’s Continuum Dynamics & Control Lab and in manufacturing engineering at Bajaj Auto.</p><div class="hero-links"><a class="button" href="mailto:sarths@umich.edu">Email me</a><a class="button" href="https://www.linkedin.com/in/sarthaks-mechanical/" target="_blank" rel="noopener">LinkedIn</a></div></div><aside class="education"><p class="eyebrow">Education</p><h2>University of Michigan</h2><p>M.S. Robotics<br><span class="muted">Aug 2026 – May 2028 (expected)</span></p><hr><h2>NIT Rourkela</h2><p>B.Tech Mechanical Engineering<br><span class="muted">Nov 2020 – Jun 2024 · GPA 3.81/4.00</span></p><p class="small">Bachelor’s project: fabrication, modelling and control of a cable-driven parallel robot.</p></aside></section>
 
-<section id="news"><div class="section-head"><p class="eyebrow">Recent milestones</p><h2>News & Updates</h2></div><div class="news-list">{% for item in site.data.news %}<div class="news-row"><time>{{ item.date | escape }}</time><div>{{ item.text | markdownify }}</div></div>{% endfor %}</div></section>
-<section id="projects"><div class="section-head"><p class="eyebrow">01 / Selected work</p><h2>Projects</h2></div><div class="media-list">{% for project in site.data.projects %}<article class="media-row"><a class="media-link" href="{{ '/projects/' | append: project.slug | append: '/' | relative_url }}" aria-label="Read about {{ project.title | escape }}">{% if project.image and project.image != '' %}<img class="media-thumb" src="{{ project.image | relative_url }}" alt="{{ project.image_alt | escape }}" loading="lazy">{% else %}<div class="media-placeholder"><span>Project image</span><small>{{ project.title | escape }}</small></div>{% endif %}</a><div><h3><a href="{{ '/projects/' | append: project.slug | append: '/' | relative_url }}">{{ project.title | escape }}</a></h3><p class="muted small">{{ project.period | escape }}</p><p>{{ project.summary | escape }}</p><p class="stack">{{ project.tools | escape }}</p><a class="details-link" href="{{ '/projects/' | append: project.slug | append: '/' | relative_url }}">Project details</a></div></article>{% endfor %}</div></section><section id="experience"><div class="section-head"><p class="eyebrow">02 / Research & industry</p><h2>Work Experience</h2></div><div class="timeline"><article class="experience"><p class="date">Feb 2025 – Jul 2026</p><div><h3>Junior Research Fellow</h3><p class="org">IIT Bombay · Continuum Dynamics & Control Lab</p><p class="muted small">Supervisor: Prof. Vivek Natarajan</p><p>Modelled rigid–flexible dynamics, identified beam properties from vibration measurements, and integrated optical encoder feedback with NI myRIO and LabVIEW FPGA.</p></div></article><article class="experience"><p class="date">Aug 2024 – Dec 2024</p><div><h3>Graduate Trainee Engineer</h3><p class="org">Bajaj Auto · Manufacturing Engineering</p><p class="muted small">Pune, India</p><p>Improved valve-collet inspection reliability by 20% using root-cause analysis, SPC and sensor recalibration. Reduced fuel-leak testing cycle time from 21 s to 17 s and extended a detection tool’s life from 1 to 4 days.</p></div></article><article class="experience"><p class="date">Jan 2024 – Jun 2024</p><div><h3>Project Research Intern</h3><p class="org">IIT Bombay · IRCC Research Fellowship</p><p class="muted small">Supervisor: Prof. Vivek Natarajan</p><p>Built a cable-driven parallel robot, developed synchronized actuator control, and validated motor responses with encoder feedback and Arduino/Python data acquisition.</p></div></article><article class="experience"><p class="date">Nov 2023 – Jun 2024</p><div><h3>Undergraduate Research Assistant</h3><p class="org">NIT Rourkela · Machine Intelligence & Robotics Lab</p><p class="muted small">Supervisor: Prof. Anup Nandy · Remote</p><p>Designed and modelled a dual-arm mobile social robot, including its kinematics, dynamics and motor integration.</p></div></article><article class="experience"><p class="date">May 2023 – Jul 2023</p><div><h3>Summer Octane Intern</h3><p class="org">Bajaj Auto · Manufacturing Engineering</p><p class="muted small">Pune, India</p><p>Evaluated over 20 error-proofing mechanisms and standardized over 15 production dashboards. Received a pre-placement offer.</p></div></article></div></section><section id="publications"><div class="section-head"><p class="eyebrow">03 / Publications & patents</p><h2>Publications</h2></div><article class="publication media-row">{% assign publication = site.data.publications[0] %}<div>{% if publication.image and publication.image != '' %}<img class="media-thumb" src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | escape }}" loading="lazy">{% else %}<div class="media-placeholder"><span>Robot image / GIF</span><small>{{ publication.title | escape }}</small></div>{% endif %}</div><div><span class="badge">Experimental abstract</span><h3>Design, fabrication and control of a cable-driven parallel robot</h3><p>D. Sorathiya, <strong>S. Sahoo</strong>, and V. Natarajan · 2025</p><p class="muted">Proceedings of the 10th Indian Control Conference, IISER Bhopal, December 9–11, 2024.</p><div class="text-links"><a href="https://arxiv.org/abs/2506.18526" target="_blank" rel="noopener">arXiv</a><a href="https://controlsociety.org/ICC24/files/0194.pdf" target="_blank" rel="noopener">Conference PDF</a></div></div></article><article class="publication media-row">{% assign publication = site.data.publications[1] %}<div>{% if publication.image and publication.image != '' %}<img class="media-thumb" src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | escape }}" loading="lazy">{% else %}<div class="media-placeholder"><span>Patent project image / GIF</span><small>{{ publication.title | escape }}</small></div>{% endif %}</div><div><span class="badge">Granted Indian patent</span><h3>Assistive Robotic System and Method for enhancing social skills in user with autism spectrum disorder</h3><p>Anup Nandy, Sougatamoy Biswas, Asim Kumar Naskar, and <strong>Sarthak Sahoo</strong></p><p class="muted">Patent No. 579221 · Granted January 29, 2025</p><a href="https://drive.google.com/file/d/1WSEPTDOXtK0L1qFPlLm6jVndGVFjeIwV/view" target="_blank" rel="noopener">Patent document</a></div></article></section>
-<section id="notes"><div class="section-head"><p class="eyebrow">04 / Learning & reference</p><h2>My Notes</h2></div><p>Notes on mechatronics, controls, dynamics, and mathematical modelling.</p>
-{% assign published_notes = site.notes | where_exp: "note", "note.draft != true" %}
-{% if published_notes.size > 0 %}<div class="notes-list">{% for note in published_notes %}<a class="note-row" href="{{ note.url | relative_url }}"><span>{{ note.title | escape }}</span><span class="muted">{{ note.topic | escape }}</span></a>{% endfor %}</div>{% endif %}
-{% if site.data.note_files.size > 0 %}<div class="notes-list">{% for note in site.data.note_files %}<a class="note-row" href="{{ note.file | relative_url }}" target="_blank" rel="noopener"><span>{{ note.title | escape }}</span><span class="muted">{{ note.topic | escape }} · PDF</span></a>{% endfor %}</div>{% endif %}
-{% if published_notes.size == 0 and site.data.note_files.size == 0 %}<div class="notes-empty"><p>No notes published yet.</p><span class="muted">Mechatronics · Controls · Dynamics</span></div>{% endif %}</section>
-<section class="background"><div><p class="eyebrow">Tools I use</p><h2>Technical Skills</h2><dl><dt>Modelling & programming</dt><dd>MATLAB, Simulink, Python, C++, LabVIEW, Java</dd><dt>Design & analysis</dt><dd>SolidWorks, Siemens NX, CATIA, AutoCAD, ANSYS, Simscape Multibody</dd><dt>Hardware & fabrication</dt><dd>NI myRIO/cRIO, Arduino, 3D printing, laser cutting, GD&T, DFMA</dd></dl></div><div><p class="eyebrow">Beyond the lab</p><h2>Leadership & Recognition</h2><ul><li>Led a 25-member Team BlueStreak; national runners-up in the ASME e-HPVC 2023 Critical Design Report Presentation.</li><li>Led team QO9D to national runners-up in the Bajaj Auto OHM Challenge 2024 for a control algorithm enabling swappable EV battery packs.</li><li>Training coordinator for 250+ students and mentor to 10 first-year students at NIT Rourkela.</li><li>Hindustani classical violinist; Sangeet Bhushan with distinction in practical.</li></ul></div></section>
+<!-- =========================================================
+     HOME / ABOUT ME
+     ========================================================= -->
+<section id="home" class="hero">
+  <div class="hero-main">
+    <p class="eyebrow">M.S. Robotics · University of Michigan</p>
+
+    <h1>
+      Sarthak Sahoo
+      <span>Dynamics. Controls. Robotics.</span>
+    </h1>
+
+    <p class="intro">
+      I am a first-year M.S. Robotics student at the University of Michigan,
+      with a background in mechanical engineering. My interests are in
+      system dynamics and control, mechatronics, and motion planning.
+    </p>
+
+    <p>
+      I enjoy working across mathematical modelling, simulation, mechanical
+      design, and experiments. Before Michigan, I worked at IIT Bombay’s
+      Continuum Dynamics &amp; Control Lab and in manufacturing engineering
+      at Bajaj Auto.
+    </p>
+
+    <div class="hero-links">
+      <a class="button" href="mailto:sarths@umich.edu">
+        Email me
+      </a>
+
+      <a
+        class="button"
+        href="https://www.linkedin.com/in/sarthaks-mechanical/"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <!-- Education sidebar -->
+  <aside class="education">
+    <p class="eyebrow">Education</p>
+
+    <h2>University of Michigan</h2>
+    <p>
+      M.S. Robotics<br>
+      <span class="muted">Aug 2026 – May 2028 (expected)</span>
+    </p>
+
+    <hr>
+
+    <h2>NIT Rourkela</h2>
+    <p>
+      B.Tech Mechanical Engineering<br>
+      <span class="muted">Nov 2020 – Jun 2024 · GPA 3.81/4.00</span>
+    </p>
+
+    <p class="small">
+      Bachelor’s project: fabrication, modelling and control of a
+      cable-driven parallel robot.
+    </p>
+  </aside>
+</section>
+
+
+<!-- =========================================================
+     NEWS & UPDATES
+     Edit entries in: _data/news.yml
+     ========================================================= -->
+<section id="news">
+  <div class="section-head">
+    <p class="eyebrow">Recent milestones</p>
+    <h2>News &amp; Updates</h2>
+  </div>
+
+  <div class="news-list">
+    {% for item in site.data.news %}
+      <div class="news-row">
+        <time>{{ item.date | escape }}</time>
+        <div>{{ item.text | markdownify }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+<!-- =========================================================
+     PROJECTS
+     Edit summaries and images in: _data/projects.yml
+     Edit detailed pages in: projects/
+     ========================================================= -->
+<section id="projects">
+  <div class="section-head">
+    <p class="eyebrow">01 / Selected work</p>
+    <h2>Projects</h2>
+  </div>
+
+  <div class="media-list">
+    {% for project in site.data.projects %}
+      <article class="media-row">
+
+        <!-- Project thumbnail and link -->
+        <a
+          class="media-link"
+          href="{{ '/projects/' | append: project.slug | append: '/' | relative_url }}"
+          aria-label="Read about {{ project.title | escape }}"
+        >
+          {% if project.image and project.image != '' %}
+            <img
+              class="media-thumb"
+              src="{{ project.image | relative_url }}"
+              alt="{{ project.image_alt | escape }}"
+              loading="lazy"
+            >
+          {% else %}
+            <div class="media-placeholder">
+              <span>Project image</span>
+              <small>{{ project.title | escape }}</small>
+            </div>
+          {% endif %}
+        </a>
+
+        <!-- Project description -->
+        <div>
+          <h3>
+            <a href="{{ '/projects/' | append: project.slug | append: '/' | relative_url }}">
+              {{ project.title | escape }}
+            </a>
+          </h3>
+
+          <p class="muted small">{{ project.period | escape }}</p>
+          <p>{{ project.summary | escape }}</p>
+          <p class="stack">{{ project.tools | escape }}</p>
+
+          <a
+            class="details-link"
+            href="{{ '/projects/' | append: project.slug | append: '/' | relative_url }}"
+          >
+            Project details
+          </a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+
+<!-- =========================================================
+     WORK EXPERIENCE
+     Edit job titles, dates and descriptions directly below.
+     Use <ul> with <li> entries for bullet points.
+     ========================================================= -->
+<section id="experience">
+  <div class="section-head">
+    <p class="eyebrow">02 / Research &amp; industry</p>
+    <h2>Work Experience</h2>
+  </div>
+
+  <div class="timeline">
+
+    <!-- Junior Research Fellow — IIT Bombay -->
+    <article class="experience">
+      <p class="date">Feb 2025 – Jul 2026</p>
+
+      <div>
+        <h3>Junior Research Fellow</h3>
+        <p class="org">IIT Bombay · Continuum Dynamics &amp; Control Lab</p>
+        <p class="muted small">Supervisor: Prof. Vivek Natarajan</p>
+
+        <ul>
+          <li>Modelled the coupled rigid-body and flexible-beam dynamics.</li>
+          <li>Identified beam properties using experimental vibration measurements.</li>
+          <li>Integrated optical encoder feedback with NI myRIO and LabVIEW FPGA.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Graduate Trainee Engineer — Bajaj Auto -->
+    <article class="experience">
+      <p class="date">Aug 2024 – Dec 2024</p>
+
+      <div>
+        <h3>Graduate Trainee Engineer</h3>
+        <p class="org">Bajaj Auto · Manufacturing Engineering</p>
+        <p class="muted small">Pune, India</p>
+
+        <p>
+          Improved valve-collet inspection reliability by 20% using
+          root-cause analysis, SPC and sensor recalibration. Reduced
+          fuel-leak testing cycle time from 21 s to 17 s and extended
+          a detection tool’s life from 1 to 4 days.
+        </p>
+      </div>
+    </article>
+
+    <!-- Project Research Intern — IIT Bombay -->
+    <article class="experience">
+      <p class="date">Jan 2024 – Jun 2024</p>
+
+      <div>
+        <h3>Project Research Intern</h3>
+        <p class="org">IIT Bombay · IRCC Research Fellowship</p>
+        <p class="muted small">Supervisor: Prof. Vivek Natarajan</p>
+
+        <p>
+          Built a cable-driven parallel robot, developed synchronized
+          actuator control, and validated motor responses with encoder
+          feedback and Arduino/Python data acquisition.
+        </p>
+      </div>
+    </article>
+
+    <!-- Undergraduate Research Assistant — NIT Rourkela -->
+    <article class="experience">
+      <p class="date">Nov 2023 – Jun 2024</p>
+
+      <div>
+        <h3>Undergraduate Research Assistant</h3>
+        <p class="org">NIT Rourkela · Machine Intelligence &amp; Robotics Lab</p>
+        <p class="muted small">Supervisor: Prof. Anup Nandy · Remote</p>
+
+        <p>
+          Designed and modelled a dual-arm mobile social robot,
+          including its kinematics, dynamics and motor integration.
+        </p>
+      </div>
+    </article>
+
+    <!-- Summer Octane Intern — Bajaj Auto -->
+    <article class="experience">
+      <p class="date">May 2023 – Jul 2023</p>
+
+      <div>
+        <h3>Summer Octane Intern</h3>
+        <p class="org">Bajaj Auto · Manufacturing Engineering</p>
+        <p class="muted small">Pune, India</p>
+
+        <p>
+          Evaluated over 20 error-proofing mechanisms and standardized
+          over 15 production dashboards. Received a pre-placement offer.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- =========================================================
+     PUBLICATIONS & PATENTS
+     Edit publication text and links directly below.
+     Edit images in: _data/publications.yml
+     ========================================================= -->
+<section id="publications">
+  <div class="section-head">
+    <p class="eyebrow">03 / Publications &amp; patents</p>
+    <h2>Publications</h2>
+  </div>
+
+  <!-- Publication: Cable-driven parallel robot -->
+  <article class="publication media-row">
+    {% assign publication = site.data.publications[0] %}
+
+    <!-- Publication image -->
+    <div>
+      {% if publication.image and publication.image != '' %}
+        <img
+          class="media-thumb"
+          src="{{ publication.image | relative_url }}"
+          alt="{{ publication.image_alt | escape }}"
+          loading="lazy"
+        >
+      {% else %}
+        <div class="media-placeholder">
+          <span>Robot image / GIF</span>
+          <small>{{ publication.title | escape }}</small>
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Publication details -->
+    <div>
+      <span class="badge">Experimental abstract</span>
+
+      <h3>Design, fabrication and control of a cable-driven parallel robot</h3>
+
+      <p>D. Sorathiya, <strong>S. Sahoo</strong>, and V. Natarajan · 2025</p>
+
+      <p class="muted">
+        Proceedings of the 10th Indian Control Conference,
+        IISER Bhopal, December 9–11, 2024.
+      </p>
+
+      <div class="text-links">
+        <a
+          href="https://arxiv.org/abs/2506.18526"
+          target="_blank"
+          rel="noopener"
+        >
+          arXiv
+        </a>
+
+        <a
+          href="https://controlsociety.org/ICC24/files/0194.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          Conference PDF
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Patent: Assistive robotic system -->
+  <article class="publication media-row">
+    {% assign publication = site.data.publications[1] %}
+
+    <!-- Patent image -->
+    <div>
+      {% if publication.image and publication.image != '' %}
+        <img
+          class="media-thumb"
+          src="{{ publication.image | relative_url }}"
+          alt="{{ publication.image_alt | escape }}"
+          loading="lazy"
+        >
+      {% else %}
+        <div class="media-placeholder">
+          <span>Patent project image / GIF</span>
+          <small>{{ publication.title | escape }}</small>
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Patent details -->
+    <div>
+      <span class="badge">Granted Indian patent</span>
+
+      <h3>
+        Assistive Robotic System and Method for enhancing social skills
+        in user with autism spectrum disorder
+      </h3>
+
+      <p>
+        Anup Nandy, Sougatamoy Biswas, Asim Kumar Naskar,
+        and <strong>Sarthak Sahoo</strong>
+      </p>
+
+      <p class="muted">Patent No. 579221 · Granted January 29, 2025</p>
+
+      <a
+        href="https://drive.google.com/file/d/1WSEPTDOXtK0L1qFPlLm6jVndGVFjeIwV/view"
+        target="_blank"
+        rel="noopener"
+      >
+        Patent document
+      </a>
+    </div>
+  </article>
+</section>
+
+
+<!-- =========================================================
+     MY NOTES
+     Add Markdown notes in: _notes/
+     List PDF notes in: _data/note_files.yml
+     ========================================================= -->
+<section id="notes">
+  <div class="section-head">
+    <p class="eyebrow">04 / Learning &amp; reference</p>
+    <h2>My Notes</h2>
+  </div>
+
+  <p>Notes on mechatronics, controls, dynamics, and mathematical modelling.</p>
+
+  {% assign published_notes = site.notes | where_exp: "note", "note.draft != true" %}
+
+  <!-- Markdown notes -->
+  {% if published_notes.size > 0 %}
+    <div class="notes-list">
+      {% for note in published_notes %}
+        <a class="note-row" href="{{ note.url | relative_url }}">
+          <span>{{ note.title | escape }}</span>
+          <span class="muted">{{ note.topic | escape }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- PDF notes -->
+  {% if site.data.note_files.size > 0 %}
+    <div class="notes-list">
+      {% for note in site.data.note_files %}
+        <a
+          class="note-row"
+          href="{{ note.file | relative_url }}"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>{{ note.title | escape }}</span>
+          <span class="muted">{{ note.topic | escape }} · PDF</span>
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- Message shown when no notes are published -->
+  {% if published_notes.size == 0 and site.data.note_files.size == 0 %}
+    <div class="notes-empty">
+      <p>No notes published yet.</p>
+      <span class="muted">Mechatronics · Controls · Dynamics</span>
+    </div>
+  {% endif %}
+</section>
+
+
+<!-- =========================================================
+     TECHNICAL SKILLS / LEADERSHIP & RECOGNITION
+     ========================================================= -->
+<section class="background">
+
+  <!-- Technical skills -->
+  <div>
+    <p class="eyebrow">Tools I use</p>
+    <h2>Technical Skills</h2>
+
+    <dl>
+      <dt>Modelling &amp; programming</dt>
+      <dd>MATLAB, Simulink, Python, C++, LabVIEW, Java</dd>
+
+      <dt>Design &amp; analysis</dt>
+      <dd>
+        SolidWorks, Siemens NX, CATIA, AutoCAD, ANSYS, Simscape Multibody
+      </dd>
+
+      <dt>Hardware &amp; fabrication</dt>
+      <dd>
+        NI myRIO/cRIO, Arduino, 3D printing, laser cutting, GD&amp;T, DFMA
+      </dd>
+    </dl>
+  </div>
+
+  <!-- Leadership and recognition -->
+  <div>
+    <p class="eyebrow">Beyond the lab</p>
+    <h2>Leadership &amp; Recognition</h2>
+
+    <ul>
+      <li>
+        Led a 25-member Team BlueStreak; national runners-up in the
+        ASME e-HPVC 2023 Critical Design Report Presentation.
+      </li>
+
+      <li>
+        Led team QO9D to national runners-up in the Bajaj Auto OHM
+        Challenge 2024 for a control algorithm enabling swappable
+        EV battery packs.
+      </li>
+
+      <li>
+        Training coordinator for 250+ students and mentor to
+        10 first-year students at NIT Rourkela.
+      </li>
+
+      <li>
+        Hindustani classical violinist; Sangeet Bhushan with
+        distinction in practical.
+      </li>
+    </ul>
+  </div>
+
+</section>
