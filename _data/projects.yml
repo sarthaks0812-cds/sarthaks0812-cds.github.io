@@ -1,11 +1,11 @@
 - slug: flexible-structures
-  title: Rigid–flexible system modelling
+  title: Modelling, fabrication and control of a single-DOF satellite testbench with flexible appendages
   summary: Modelled coupled rigid-body motion and elastic deformation using Hamilton’s
     principle. Developed an Euler–Bernoulli beam FEM model with Hermite elements and
     predicted natural frequencies within ±0.1% error.
   period: IIT Bombay · 2025–2026
   tools: MATLAB · FEM · System identification
-  image: ''
+  image: '/assets/images/satellite_project.png'
   image_alt: Rigid–flexible system modelling
 - slug: cable-driven-robot
   title: Cable-driven parallel robot
