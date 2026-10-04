@@ -1,10 +1,12 @@
 - date: Aug 2026
-  text: "Started my M.S. in Robotics at the University of Michigan, Ann Arbor."
+  text: "Started my Master os Science (MS) in Robotics at the University of Michigan, Ann Arbor."
 - date: Jul 2026
-  text: "Completed my work as a Junior Research Fellow at IIT Bombay’s Continuum Dynamics & Control Lab, supervised by Prof. Vivek Natarajan."
+  text: "Completed my tenure as a Junior Research Fellow at IIT Bombay’s Continuum Dynamics & Control Lab (Systems & Control Engg.), supervised by Prof. Vivek Natarajan."
 - date: Jan 2025
-  text: "Our assistive robotic system was granted Indian Patent No. 579221 on January 29, 2025."
+  text: "CARAT - Caregiver Autism Robot with AI-assisted Technology (my collaboration with Prof. Anup Nandy, NIT Rourkela) was granted Indian Patent No. 579221 on January 29, 2025."
 - date: Dec 2024
-  text: "Our cable-driven parallel robot work appeared as an experimental abstract in the proceedings of the 10th Indian Control Conference, IISER Bhopal."
+  text: "Presented our experimental work ``Design, Fabrication and Control of a Cable-Driven Parallel Robot,'' executed jointly with Dhruv Sorathiya, at the 10th Indian Control Conference held at IISER Bhopal."
+- date: Aug 2024
+  text: "Joined Bajaj Auto Limited (PPO) as a Graduate Trainee Engineer (GTE) in the Manufacturing Engineering Team at the Chakan Plant in Pune."
 - date: Mar 2024
   text: "Led team QO9D to national runners-up in the Bajaj Auto OHM Challenge for a control algorithm enabling swappable EV battery packs."
